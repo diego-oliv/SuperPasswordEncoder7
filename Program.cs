@@ -11,7 +11,8 @@ namespace SPE7
             string password = "";
             string codifiedPassword = "";
 
-            System.Console.Write("Digite a palavra: ");
+            Intro();
+            System.Console.Write("Type the word to encrypt it: ");
             password = Console.ReadLine().ToLower();
 
             List<String> passwordChars = new List<string>();
@@ -207,9 +208,17 @@ namespace SPE7
                 codifiedPassword += passwordChar;
             }
             int passwordLenght = codifiedPassword.Length;
-            System.Console.Write("Sua senha criptograda é: ");
+            System.Console.Write("This is your encrypted password: ");
             System.Console.WriteLine(codifiedPassword);
-            System.Console.WriteLine($"A senha tem {passwordLenght} caracteres.");
+            System.Console.WriteLine($"The password has {passwordLenght} characters.");
+        }
+
+        private static void Intro()
+        {
+            System.Console.WriteLine("======================================");
+            System.Console.WriteLine("      Super Passoword Encoder 7");
+            System.Console.WriteLine("======================================");
+            System.Console.WriteLine();
         }
     }
 }

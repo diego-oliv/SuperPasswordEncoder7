@@ -1,0 +1,10 @@
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\obj\Debug\netcoreapp2.1.1\SPE7.csprojAssemblyReference.cache
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\obj\Debug\netcoreapp2.1.1\SPE7.AssemblyInfoInputs.cache
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\obj\Debug\netcoreapp2.1.1\SPE7.AssemblyInfo.cs
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\bin\Debug\netcoreapp2.1.1\SPE7.deps.json
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\bin\Debug\netcoreapp2.1.1\SPE7.runtimeconfig.json
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\bin\Debug\netcoreapp2.1.1\SPE7.runtimeconfig.dev.json
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\bin\Debug\netcoreapp2.1.1\SPE7.dll
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\bin\Debug\netcoreapp2.1.1\SPE7.pdb
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\obj\Debug\netcoreapp2.1.1\SPE7.dll
+C:\Users\rapma\OneDrive\Área de Trabalho\Codes\Consoles\SPE7\obj\Debug\netcoreapp2.1.1\SPE7.pdb

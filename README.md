@@ -10,6 +10,7 @@ Dicas de uso:
 - Tente não usar caracteres repetidos.
 - Não faz diferença usar caracteres minúsculos ou maiúsculos, ainda não foi implementado um método para diferenciá-los.
 - Não use palavras muito grandes para não gerar uma senha imensa.
+- Use letras e números para torná-la mais segura.
 - Seja criativo na hora de criar suas senhas =D
 
 V 0.1

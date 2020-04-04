@@ -1,5 +1,5 @@
 # Super Password Encoder 7 (SPE7)
-Um programa simples para criptografar suas senhas.
+A simple program to generate passwords with words.
 
 
 Esse criptografador serve, à princípio, para transformar palavras simples em senhas úteis.

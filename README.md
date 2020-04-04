@@ -9,12 +9,12 @@ Dicas de uso:
 - Não use caracteres especiais, o programa ainda não os reconhece.
 - Tente não usar caracteres repetidos.
 - Não faz diferença usar caracteres minúsculos ou maiúsculos, ainda não foi implementado um método para diferenciá-los.
-- Não use palavras muito grandes para não gerar uma senha imensa.
+- Não use palavras muito grandes para não gerar uma senha imensa (será implementado um método para escolher o tamanho da senha).
 - Use letras e números para torná-la mais segura.
 - Seja criativo na hora de criar suas senhas =D
 
 V 0.1
-- Console criptogradador criado.
+- Console gerador de senhas criado.
 - Os caracteres aceitos são: [a-z] [0-9].
 - A versão ainda está em console, mas futuramente será adaptado para um executável.
 

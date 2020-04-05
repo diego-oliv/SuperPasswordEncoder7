@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rapma\\OneDrive\\Área de Trabalho\\Codes\\Consoles\\SPE7\\SPE7.csproj",
+      "projectUniqueName": "C:\\Users\\rapma\\OneDrive\\Área de Trabalho\\Codes\\Consoles\\SuperPasswordEncoder7\\SPE7.csproj",
       "projectName": "SPE7",
-      "projectPath": "C:\\Users\\rapma\\OneDrive\\Área de Trabalho\\Codes\\Consoles\\SPE7\\SPE7.csproj",
+      "projectPath": "C:\\Users\\rapma\\OneDrive\\Área de Trabalho\\Codes\\Consoles\\SuperPasswordEncoder7\\SPE7.csproj",
       "packagesPath": "C:\\Users\\rapma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rapma\\OneDrive\\Área de Trabalho\\Codes\\Consoles\\SPE7\\obj\\",
+      "outputPath": "C:\\Users\\rapma\\OneDrive\\Área de Trabalho\\Codes\\Consoles\\SuperPasswordEncoder7\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

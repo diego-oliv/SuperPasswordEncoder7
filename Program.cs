@@ -200,6 +200,36 @@ namespace SPE7
                     string char9 = "Aq$cEV%5D6o";
                     passwordChars.Add(char9);
                     break;
+
+                    case '!':
+                    string specialChar1 = "sc1";
+                    passwordChars.Add(specialChar1);
+                    break;
+
+                    case '@':
+                    string specialChar2 = "sc2";
+                    passwordChars.Add(specialChar2);
+                    break;
+
+                    case '#':
+                    string specialChar3 = "sc3";
+                    passwordChars.Add(specialChar3);
+                    break;
+
+                    case '$':
+                    string specialChar4 = "sc4";
+                    passwordChars.Add(specialChar4);
+                    break;
+
+                    case '%':
+                    string specialChar5 = "";
+                    passwordChars.Add(specialChar5);
+                    break;
+
+                    case '&':
+                    string specialChar6 = "";
+                    passwordChars.Add(specialChar6);
+                    break;
                 }
             }
 
@@ -212,7 +242,6 @@ namespace SPE7
             System.Console.WriteLine(codifiedPassword);
             System.Console.WriteLine($"The password has {passwordLenght} characters.");
         }
-
         private static void Intro()
         {
             System.Console.WriteLine("======================================");

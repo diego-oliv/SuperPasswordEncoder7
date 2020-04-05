@@ -1,24 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace SPE7
 {
     class Program
     {
+        // This variable is needed to increase performance for long passwords.
+        private static string latestHash = "";
         static void Main(string[] args)
         {
             Console.Clear();
-            string password = "";
-            string codifiedPassword = "";
+            int desiredPasswordLength = 100000;
 
             Intro();
-            System.Console.Write("Type the word to encrypt it: ");
-            password = Console.ReadLine().ToLower();
+            Console.Write("Type the word to encrypt it: ");
+            string password = Console.ReadLine();
 
-            List<String> passwordChars = new List<string>();
-            char[] passwordArray = password.ToCharArray();
-            for(int i=0; i < passwordArray.Length; i++)
+            string codifiedPassword = ComputeHashForString(password);
+            while (codifiedPassword.Length < desiredPasswordLength)
             {
+<<<<<<< HEAD
                 switch(passwordArray[i])
                 {
                     case 'a':
@@ -231,23 +233,33 @@ namespace SPE7
                     passwordChars.Add(specialChar6);
                     break;
                 }
+=======
+                codifiedPassword += ComputeHashForString(latestHash);
+>>>>>>> e88346ae2b9eed01427521bdc3831b520d65d5f2
             }
+            codifiedPassword = codifiedPassword.Substring(0, desiredPasswordLength);
 
-            foreach(string passwordChar in passwordChars)
-            {
-                codifiedPassword += passwordChar;
-            }
             int passwordLenght = codifiedPassword.Length;
-            System.Console.Write("This is your encrypted password: ");
-            System.Console.WriteLine(codifiedPassword);
-            System.Console.WriteLine($"The password has {passwordLenght} characters.");
+            Console.Write("This is your encrypted password: ");
+            Console.WriteLine(codifiedPassword);
+            Console.WriteLine($"The password has {passwordLenght} characters.");
+        }
+
+        private static string ComputeHashForString(string stringToHash)
+        {
+            using (SHA256 mySHA256 = SHA256.Create())
+            {
+                var hash = mySHA256.ComputeHash(Encoding.UTF8.GetBytes(stringToHash));
+                latestHash = Convert.ToBase64String(hash);
+                return latestHash;
+            }
         }
         private static void Intro()
         {
-            System.Console.WriteLine("======================================");
-            System.Console.WriteLine("      Super Passoword Encoder 7");
-            System.Console.WriteLine("======================================");
-            System.Console.WriteLine();
+            Console.WriteLine("======================================");
+            Console.WriteLine("      Super Passoword Encoder 7");
+            Console.WriteLine("======================================");
+            Console.WriteLine();
         }
     }
 }

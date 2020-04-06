@@ -8,12 +8,13 @@ namespace SPE7
 {
     class Program
     {
-        // This variable is needed to increase performance for long passwords.
         private static string latestHash = "";
         static void Main(string[] args)
         {
+            //TODO: Criar laços de repetição para definir a senha que quer usar
+            //TODO: Criar um método de cadastro de usuários
+            //TODO: Criar um método para o usuário salvar as senhas que criou no aplicativo
             Console.Clear();
-            //creating variables
             int desiredPasswordLength = 0;
             string password = "";
             string encryptedPassword = "";
@@ -45,6 +46,7 @@ namespace SPE7
         }
         private static string ComputeHashForString(string stringToHash)
         {
+            // * This method is basicly a template to encrypt using SHA256
             using (SHA256 mySHA256 = SHA256.Create())
             {
                 var hash = mySHA256.ComputeHash(Encoding.UTF8.GetBytes(stringToHash));
@@ -54,6 +56,7 @@ namespace SPE7
         }
         private static string CreateRandomChar()
         {
+            // * This method is responsible for create random characters in the password
         var chars = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789!@#$%";
             Random random = new Random();
             string randomCharPicked = new string(
